@@ -15,7 +15,7 @@
 <div class="colorido"><div class="bloco0">	
 <table class="tab">
 
-<form action="envia.php" onsubmit="return verifica()" name="formu" method="POST" enctype="multipart/form-data">
+<form action="envia.php" onclick="verifica()" name="formu" method="POST" enctype="multipart/form-data">
 <tr><td><p class="tex">Envie o seu email!</p><br /><br /></tr></td>
 <tr><td><input type="text" class="formte" id="nome" name="nome" placeholder="Qual o seu nome?" /><br /><br /></tr></td>
 <tr><td><input type="text" class="formte" id="quem" name="quem" placeholder="Para qual email gostaria de enviar?" /><br /><br /></tr></td>
@@ -35,23 +35,5 @@
 
 //validação javascript campo vazio:
 
-function verifica(){
-if (document.formu.nome.value=="" && document.formu.senha.value==""  && document.formu.quem.value==""  && document.formu.mensagem.value==""){
-alert("Preencha o formulário!");
-return false;}
-	if (document.formu.nome.value==""){
-alert("Por favor, Digite o nome!");
-return false;}
-if (document.formu.senha.value==""){
-alert("Por favor, Digite a senha!");
-return false;}
-if (document.formu.quem.value==""){
-alert("Por favor, Digite a senha!");
-return false;}
-if (document.formu.mensagem.value==""){
-alert("Por favor, Digite sua mensagem!");
-return false;}
-}
-</script>
 </body>
 </html>
